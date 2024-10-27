@@ -1,5 +1,57 @@
 # Streaming chatbot with OpenAI functions
 
+<div align="center">
+  <h1>Streamlit-MultiChat</h1>
+</div>
+
+<div align="center">
+  <h3>Many LLMs - One Streamlit Web App</h3>
+</div>
+
+<style>
+  a {
+    text-decoration: none; /* This removes underline from links */
+  }
+</style>
+
+<div align="center">
+  <a href="https://github.com/JAlcocerT/Streamlit-MultiChat?tab=GPL-3.0-1-ov-file" style="margin-right: 5px;">
+    <img alt="Code License" src="https://img.shields.io/badge/License-GPLv3-blue.svg" />
+  </a>
+  <a href="https://github.com/JAlcocerT/Streamlit-MultiChat/actions/workflows/Streamlit_GHA_MultiArch.yml" style="margin-right: 5px;">
+    <img alt="GH Actions Workflow" src="https://github.com/JAlcocerT/Streamlit-MultiChat/actions/workflows/Streamlit_GHA_MultiArch.yml/badge.svg" />
+  </a>
+  <a href="https://GitHub.com/JAlcocerT/Streamlit-Multichat/graphs/commit-activity" style="margin-right: 5px;">
+    <img alt="Mantained" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+  </a>
+  <a href="https://www.python.org/downloads/release/python-312">
+    <img alt="Python Version" src="https://img.shields.io/badge/python-3.12-blue.svg" />
+  </a>
+</div>
+
+* **Docs**:
+  * https://jalcocert.github.io/JAlcocerT/get-started-with-flask/
+  * https://jalcocert.github.io/JAlcocerT/how-to-use-openai-function-calling/
+
+```sh
+git clone https://github.com/JAlcocerT/Chainlit-OpenAI-Functions
+python -m venv cloaifunction_venv #create the venv
+
+cloaifunction_venv\Scripts\activate #activate venv (windows)
+source cloaifunction_venv/bin/activate #(linux)
+```
+
+```sh
+pip install -r requirements.txt #all at once
+chainlit run app.py
+chainlit run app.py --port 8090 #default 8000
+```
+
+* API As Environment Variables:
+  * Linux - `export OPENAI_API_KEY="YOUR_API_KEY"`
+  * CMD - `set OPENAI_API_KEY=YOUR_API_KEY`
+  * PS - `$env:OPENAI_API_KEY="YOUR_API_KEY"`
+
 This chatbot utilizes OpenAI's function calling feature to invoke appropriate functions based on user input and stream the response back.
 
 On top of the standard chat interface, the UI exposes the particular function called along with its arguments, as well as the response from the function.

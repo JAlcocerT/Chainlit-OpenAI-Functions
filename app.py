@@ -9,7 +9,7 @@ from openai_functions import FUNCTIONS_MAPPING
 load_dotenv()
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
-MODEL_NAME = "gpt-3.5-turbo-0613"
+MODEL_NAME = "gpt-4o-mini"
 MODEL_TEMPERATURE = 0.3
 FUNCTION_CALL = "auto"
 

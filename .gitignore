@@ -1,5 +1,7 @@
 # chainlit
 .chainlit/
+*_venv/
+
 
 .vscode
 

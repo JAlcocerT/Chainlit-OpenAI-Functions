@@ -53,7 +53,22 @@ class OpenAIFunctions:
             return json.dumps({"error": "Failed to get search results"})
 
 
+    @staticmethod
+    def read_houses_info():
+        """Read information about houses from a file."""
+        try:
+            with open('houses.txt', 'r') as file:
+                data = file.read()
+                return json.dumps(data)
+        except FileNotFoundError:
+            print("The file 'houses.txt' does not exist.")
+            return json.dumps({"error": "File not found"})
+        except Exception as err:
+            print(f"An error occurred: {err}")
+            return json.dumps({"error": "Failed to read file"})
+
 FUNCTIONS_MAPPING = {
     "get_search_results": OpenAIFunctions.get_search_results,
     "get_current_weather": OpenAIFunctions.get_current_weather,
+    "read_houses_info": OpenAIFunctions.read_houses_info,
 }
