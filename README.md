@@ -1,18 +1,12 @@
-# Streaming chatbot with OpenAI functions
-
 <div align="center">
-  <h1>Streamlit-MultiChat</h1>
+  <h1>Streaming chatbot with OpenAI functions</h1>
 </div>
 
 <div align="center">
-  <h3>Many LLMs - One Streamlit Web App</h3>
+  <h3>Testing ChainLit</h3>
 </div>
 
-<style>
-  a {
-    text-decoration: none; /* This removes underline from links */
-  }
-</style>
+
 
 <div align="center">
   <a href="https://github.com/JAlcocerT/Streamlit-MultiChat?tab=GPL-3.0-1-ov-file" style="margin-right: 5px;">
